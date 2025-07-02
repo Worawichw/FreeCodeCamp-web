@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Worawich's Survey</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="intro">
+      <h1 id="title">Hello Visitor!</h1>
+      <p id="description">Welcome to Worawich's little survey!</p>
+    </div>
+    <hr>
+    <form id="survey-form" method="post">
+      <div class="container-top">
+        <label id="name-label">Enter your name: <input type="text"id="name" placeholder="Enter Name..." required></label>
+        <label id="email-label">Enter your email: <input type="email"id="email" placeholder="Enter Email..." required></label>
+        <label id="number-label">Enter your age: <input type="number" id="number" min="13" max="120" placeholder="Enter Age..."></label>
+        <label id="fruit"> What fruit do you like?!!🍇🍌🍊🍓
+          <select id="dropdown">
+            <option value="">select fruit...</option>
+            <option value="1">Banana</option>
+            <option value="2">Strawberry</option>
+            <option value="3">Grape</option>
+            <option value="4">Orange</option>
+          </select>  
+        </label>
+      </div>
+        <p id="gender">What gender are you???🚻</p>
+          <div class="container-gender">
+            <label id="gender-text"><input type="radio" name="gender" value="male"> Male</label>  
+            <label id="gender-text"><input type="radio" name="gender" value="female"> Female</label>
+            <label id="gender-text"><input type="radio" name="gender" value="other"> Other</label>
+          </div>
+        <p id="edu-level">What level of education are you in?🤓<p>
+          <div class="container-edu">
+            <label id="edu-text"><input type="checkbox" value="elementary" > Elementary</label>
+            <label id="edu-text"><input type="checkbox" value="middle"> Middle school</label>
+            <label id="edu-text"><input type="checkbox" value="jhigh"> Junior highschool</label>
+            <label id="edu-text"><input type="checkbox" value="high"> Highschool</label>
+            <label id="edu-text"><input type="checkbox" value="uni"> University</label>
+            <label id="edu-text"><input type="checkbox" value="work"> Working</label>
+          </div>
+        <label id="comments">Any comments!!!🤔🤔🤔
+          <textarea placeholder="Umm...."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
